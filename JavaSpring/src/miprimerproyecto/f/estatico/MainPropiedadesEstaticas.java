@@ -57,6 +57,8 @@ public class MainPropiedadesEstaticas {
 		for(Empleado e : empleados) {
 			System.out.println(e);
 		}
+		
+		System.out.println("Cambio de último minuto");
 
 	}
 
