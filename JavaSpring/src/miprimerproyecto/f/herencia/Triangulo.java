@@ -4,7 +4,7 @@ class Triangulo extends DosDimensiones {
 
 	//4
 	public double mostrarArea() {
-		// return base*altura/2;
+//		 return base*altura/2;
 		return getBase() * getAltura() / 2;
 	}
 	
@@ -17,7 +17,7 @@ class Triangulo extends DosDimensiones {
 
 	public Triangulo(String estilo, double base, double altura) {		
 		//12 USO DE SUPER()
-		//super();
+//		super();
 		super(base, altura);
 		this.estilo = estilo;
 	}

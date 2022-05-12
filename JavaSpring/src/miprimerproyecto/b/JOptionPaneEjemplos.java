@@ -20,19 +20,19 @@ public class JOptionPaneEjemplos {
 	 * nuestros propios cuadros de diálogo personalizados. Dado que JOptionPane
 	 * proporciona cuadros de diálogo estándar, es muy útil. *
 	 */
-	public JOptionPaneEjemplos() {
+	public static void main(String[] args) {
 //		//EJEMPLO 1
 //		//String pregunta = JOptionPane.showInputDialog("Aquí va la pregunta");
 //		 String nombre = JOptionPane.showInputDialog("Nombre: ");
 //		String entradaNombre = "Nombre: ";
 //		// Un nombre de usuario
-//		 String nombre = JOptionPane.showInputDialog(entradaNombre);
+//		 nombre = JOptionPane.showInputDialog(entradaNombre);
 //		 String entradaEdad = "Edad: ";
 //		// La edad del usuario
 //		 String edad = JOptionPane.showInputDialog(entradaEdad);
 //		// Si declaramos todo como String, obtenemos un resultado sorprendente
-////		 System.out.println("Hola "+ nombre +" . El año que viene tendrás "+ (edad+1)
-////		 +" años.");
+//		 System.out.println("Hola "+ nombre +" . El año que viene tendrás "+ (edad+1)
+//		 +" años.");
 //		// Necesitamos hacer una conversión
 //		// Necesitaré importar un paquete estático
 //		 int edadUser = Integer.parseInt(edad);
@@ -57,20 +57,18 @@ public class JOptionPaneEjemplos {
 		// También puedo usar la mención null
 //		 JOptionPane.showMessageDialog(null,"Hola y bienvenido al Campus de C2B.");
 		// formas de uso 4 CON 4 PARÁMETROS
-		// JOptionPane.showMessageDialog(null, "Algo ha ido mal...", "Error en el
-		// título", JOptionPane.ERROR_MESSAGE);
-		// JOptionPane.showMessageDialog(null, "Algo ha ido mal...", "Error en el
-		// título", 0);
+//		 JOptionPane.showMessageDialog(null, "Algo ha ido mal...", "Error en el título", JOptionPane.ERROR_MESSAGE);
+//		 JOptionPane.showMessageDialog(null, "Algo ha ido mal...", "Error en el título", 0);
 		// INFORMATION_MESSAGE
 //		JOptionPane.showMessageDialog(null, "Información acerca de NOSEKE.", "Información", JOptionPane.INFORMATION_MESSAGE);	
-		// JOptionPane.showMessageDialog(null, "Información acerca de NOSEKE.",
-		// "Información", 1);
+//		 JOptionPane.showMessageDialog(null, "Información acerca de NOSEKE.",
+//		 "Información", 1);
 		// WARNING_MESSAGE
 //		JOptionPane.showMessageDialog(null, "Operación realizada con éxito.", "Alerta", 2);
-		// JOptionPane.showMessageDialog(null, "Operación realizada con éxito.",
-		// "Alerta", JOptionPane.WARNING_MESSAGE);
-		// QUESTION_MESSAGE
-		// JOptionPane.showMessageDialog(null, "Tenemos una pregunta.", "Pregunta", 3);
+//		 JOptionPane.showMessageDialog(null, "Operación realizada con éxito.",
+//		 "Alerta", JOptionPane.WARNING_MESSAGE);
+//		 QUESTION_MESSAGE
+//		 JOptionPane.showMessageDialog(null, "Tenemos una pregunta.", "Pregunta", 3);
 //		JOptionPane.showMessageDialog(null, "Tenemos una pregunta.", "Información", JOptionPane.QUESTION_MESSAGE);	
 
 		// EJEMPLO 3
@@ -80,18 +78,23 @@ public class JOptionPaneEjemplos {
 
 		// EJEMPLO4
 //		showConfirmDialog()
-//		int input = JOptionPane.showConfirmDialog(null, "¿Confirmar ejecución");
-//		// 0=yes, 1=no, 2=cancel
-//		System.out.println(input);		
-
-		// ejemplo5
-		Object[] colores = { "rojo", "negro", "amarillo", "azul", "majenta" };
-		// JOptionPane.showInputDialog(padre, mensaje, titulo, tipo de seleccion, tipo
-		// de mensaje, icono, opciones, valor inicial);
-		String salida = JOptionPane.showInputDialog(null, "Selecciona un color", 
-				"Elegir", JOptionPane.QUESTION_MESSAGE,
-				null, colores, colores[0]).toString();
-		JOptionPane.showMessageDialog(null, salida);
+//		int input = JOptionPane.showConfirmDialog(null, "¿Confirmar ejecución?");
+		// 0=yes, 1=no, 2=cancel
+//		System.out.println(input);	
+		
+//		JOptionPane.showMessageDialog(null, "Muchas gracias por su compra", "Pedido cobrado",
+//				JOptionPane.WARNING_MESSAGE);
+//		int decision = JOptionPane.showConfirmDialog(null, "Algún mensaje", "Confirmar compra", JOptionPane.YES_NO_OPTION);
+		
+		
+//		// ejemplo5
+//		Object[] colores = { "rojo", "negro", "amarillo", "azul", "majenta" };
+//		// JOptionPane.showInputDialog(padre, mensaje, titulo, tipo de seleccion, tipo
+//		// de mensaje, icono, opciones, valor inicial);
+//		String salida = JOptionPane.showInputDialog(null, "Selecciona un color", 
+//				"Elegir", JOptionPane.QUESTION_MESSAGE,
+//				null, colores, colores[3]).toString();
+//		JOptionPane.showMessageDialog(null, salida);
 		
 	}
 

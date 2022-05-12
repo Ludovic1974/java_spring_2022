@@ -4,9 +4,7 @@ public class Gato {
 	
 	//17
 	private int patas; 
-	private int ojos; 
-	
-	
+	private int ojos; 	
 
 	public Gato(int patas, int ojos) {
 		this.patas = patas;

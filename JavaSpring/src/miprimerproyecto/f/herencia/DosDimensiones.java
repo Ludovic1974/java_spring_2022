@@ -4,8 +4,8 @@ public class DosDimensiones {
 
 
 	//3
-	//	double base;
-	//	double altura;	
+//		double base;
+//		double altura;	
 	
 	/*
 	 * 5
@@ -13,7 +13,7 @@ public class DosDimensiones {
 	 * (private) para evitar su uso no autorizado o alteración. Heredar una clase no
 	 * anula la restricción de acceso privado. Por lo tanto, aunque una subclase
 	 * incluye a todos los miembros de su superclase, no puede acceder a los
-	 * miembros de la superclase que se han declarado privados.
+	 * miembros de la superclase que se han declarado privados. SUBCLASE.
 	 */
 	private double base;
 	private double altura;
