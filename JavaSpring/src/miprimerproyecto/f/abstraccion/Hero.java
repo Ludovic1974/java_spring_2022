@@ -9,7 +9,7 @@ abstract public class Hero {
 
 	private String nombre;	
 
-    public Hero(String nombre) {
+	public Hero(String nombre) {
         this.nombre = nombre;
     }
 

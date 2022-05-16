@@ -25,6 +25,11 @@ public class Arquero extends Hero {
 		return "Tiene miedo a encontrarse sin flechas. Siempre recogiendo las que tira por allí!\n";
 	}
 	
+	//12
+	public String getEspecialidad() {
+		return "Sabe tirar muy bien"; 
+	}
+	
 	@Override
 	public String toString() {
 		return getNombre() + " " 

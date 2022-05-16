@@ -5,8 +5,6 @@ public class Gato {
 	//24
 	private int patas; 
 	private int ojos; 
-	
-	
 
 	public Gato(int patas, int ojos) {
 		this.patas = patas;
