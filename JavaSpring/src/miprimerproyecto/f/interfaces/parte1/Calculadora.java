@@ -1,4 +1,4 @@
-package miprimerproyecto.f.interfaces;
+package miprimerproyecto.f.interfaces.parte1;
 
 public class Calculadora implements InterfazCalculadora {
 	
