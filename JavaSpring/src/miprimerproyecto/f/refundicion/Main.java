@@ -15,12 +15,12 @@ public class Main {
 		// 14 PRESIDENTE
 
 		// 6 crear unos cuantos empleados
-		Empleado asier = new Empleado("Asier", 1500);
-		Empleado aitor = new Empleado("Aitor", 1600);
-		Empleado david = new Empleado("David", 1700);
-		Empleado ignacio = new Empleado("Ignacio", 1500);
-		Empleado gorka = new Jefe("Gorka", 1600);
-		Empleado roberto = new Jefe("Roberto", 1700);
+		Empleado asier = new Empleado("Asier", 1500, "Informática");
+		Empleado aitor = new Empleado("Aitor", 1600, "Informática");
+		Empleado david = new Empleado("David", 1700, "Informática");
+		Empleado ignacio = new Empleado("Ignacio", 1500, "Informática");
+		Empleado gorka = new Jefe("Gorka", 1600, 200, "Informática");
+		Empleado roberto = new Jefe("Roberto", 1700, 500, "Informática");
 
 		ArrayList<Empleado> empleados = new ArrayList<Empleado>(
 				Arrays.asList(asier, aitor, david, ignacio, gorka, roberto));
@@ -36,9 +36,14 @@ public class Main {
 		// del objeto. convertir el empleado Gorka en jefe.
 		Jefe jefeFinanciero = (Jefe) gorka;
 		Jefe jefeEquipo = (Jefe) roberto;
-		// 8 Es solo después de hacerlo que tendré acceso a sus métodos propios
-		jefeFinanciero.setIncentivo(500);
-		jefeEquipo.setIncentivo(200);
+		// 8 
+		// podemos actualizar el incentivo 
+		// o simplemente tenerlo en el constructor
+		//En nuestro ejmeplo actual lo tenemos en el constructor
+		//Por eso comentará las líneas setIncentivo aquí abajo
+		// Es solo después de hacerlo que tendré acceso a sus métodos propios
+//		jefeFinanciero.setIncentivo(500);
+//		jefeEquipo.setIncentivo(200);
 
 		// 9 Sin embargo, ya que Asier no ha sido declarado como jefe,
 		// no puedo convertirle en jefe como lo hice con Gorka
@@ -47,11 +52,13 @@ public class Main {
 		// ¿Es un jefe el empleado asier? contestamos que sí
 
 		// 12
-		Empleado ana = new Director("Ana", 3500);
+		Empleado ana = new Director("Ana", 3500, 200, 500, "Informática");
 		empleados.add(ana);
 		Director director = (Director) ana;
-		director.setIncentivo(100);
-		director.setBonificaciones(500);
+		
+		//uso de setIncentivo y setBonificacion
+//		director.setIncentivo(100);
+//		director.setBonificaciones(500);
 
 		// 13 Imprimiendo la lista de empleados
 		for (Empleado empleado : empleados) {

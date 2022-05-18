@@ -3,9 +3,9 @@ package miprimerproyecto.f.refundicion;
 final public class Director extends Jefe {
 
 	// 10
-	public Director(String nombre, double sueldo) {
-		super(nombre, sueldo);
-		// TODO Auto-generated constructor stub
+	public Director(String nombre, double sueldo, double incentivo, double bonificaciones, String seccion) {
+		super(nombre, sueldo, incentivo, seccion);
+		this.bonificaciones = bonificaciones;
 	}
 
 	private double bonificaciones;

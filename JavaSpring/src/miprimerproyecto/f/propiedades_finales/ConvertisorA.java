@@ -12,7 +12,7 @@ public class ConvertisorA {
 	static double euros = 0;
 	static String cantidadEuros = "Introduzca la cantidad en EUROS";
 
-	//19 El método que devulve el resultado
+	// 19 El método que devulve el resultado
 	public static String devuelveConversion(byte conversion, double euros) {
 		if (conversion == 1) {
 			double dolar = euros * DOLAR;

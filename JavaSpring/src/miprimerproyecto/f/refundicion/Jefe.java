@@ -3,8 +3,9 @@ package miprimerproyecto.f.refundicion;
 //4 crear la clase jefe
 public class Jefe extends Empleado {
 
-    public Jefe(String nombre, double sueldo) {
-        super(nombre, sueldo);      
+    public Jefe(String nombre, double sueldo, double incentivo, String seccion) {
+        super(nombre, sueldo, seccion);  
+        this.incentivo = incentivo; 
     }
 
     private double incentivo;
